@@ -59,6 +59,7 @@ int tops()
 	printf("\t\t(1)Casual\n");
 	printf("\t\t(2)Professional\n");
 	printf("\t\t(3)Going Out\n");
+	printf("\t\t(4)Urban/Trendy\n");
 	printf("\t\t(4)Surprise me!\n");
 
 	scanf("%d",&cht );
@@ -96,15 +97,16 @@ int Pants()
 	return cht;
 }
 
-int Jeans()
+int Accessories()
 {
 	int cht;
-	printf("What kind of Jeans are you looking for?\n");
-	printf("\t\t(1)Skinny\n");
-	printf("\t\t(2)Flare\n");
-	printf("\t\t(3)Mom\n");
-	printf("\t\t(3)Stretch\n");
-	printf("\t\t(4)Surprise me!\n");
+	printf("What kind of Accessorie are you looking for?\n");
+	printf("\t\t(1)Bags/Purses\n");
+	printf("\t\t(2)Hats/Headbands\n");
+	printf("\t\t(3)Jewelry\n");
+	printf("\t\t(4)Glasses\n");
+	printf("\t\t(5)Gloves/Scarves\n");
+	printf("\t\t(6)Surprise me!\n");
 
 	scanf("%d",&cht );
 
@@ -177,10 +179,60 @@ int main()
 			if(ch2 == 4)//takes user to types of pants
 			{
 				ch3 = Pants();
+				if(ch3 == 1)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/casual/pants/\n");
+				}
+				if(ch3 == 2)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/professional/pants/\n");
+				}
+				if(ch3 == 3)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/datesgoing-out/pants/\n");
+				}
 			}
+			//------------------------------------------------------------------------
+
 			if(ch2 == 5)//takes user to types of jeans
 			{
-				ch3 = Jeans();
+				ch3 = Accessories();
+				if(ch3 == 1)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/accessories/bagspurses/\n");
+				}
+				if(ch3 == 2)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/accessories/hatsheadbands/\n");
+				}
+				if(ch3 == 3)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/accessories/jewelry/\n");
+				}
+				if(ch3 == 4)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/accessories/glasses/\n");
+				}
+				if(ch3 == 5)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/accessories/glovesscarves/\n");
+				}
 			}
 	}
 	return 0;
