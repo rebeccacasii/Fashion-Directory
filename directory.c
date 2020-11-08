@@ -28,7 +28,7 @@ int whatitems()
 		printf("\t\t(2)Tops\n");
 		printf("\t\t(3)Dresses\n");
 		printf("\t\t(4)Pants\n");
-		printf("\t\t(5)Jeans\n");
+		printf("\t\t(5)Accessories\n");
 		scanf("%d", &choice2);
 	}while(choice2 < 1 || choice2 >5);
 
@@ -71,7 +71,7 @@ int tops()
 int dresses()
 {
 	int cht;
-	printf("What kind of tops are you looking for?\n");
+	printf("What kind of Dresses are you looking for?\n");
 	printf("\t\t(1)Casual\n");
 	printf("\t\t(2)Professional\n");
 	printf("\t\t(3)Going Out\n");
@@ -85,7 +85,7 @@ int dresses()
 int Pants()
 {
 	int cht;
-	printf("What kind of tops are you looking for?\n");
+	printf("What kind of Pants are you looking for?\n");
 	printf("\t\t(1)Casual\n");
 	printf("\t\t(2)Professional\n");
 	printf("\t\t(3)Party\n");
@@ -99,7 +99,7 @@ int Pants()
 int Jeans()
 {
 	int cht;
-	printf("What kind of jeans are you looking for?\n");
+	printf("What kind of Jeans are you looking for?\n");
 	printf("\t\t(1)Skinny\n");
 	printf("\t\t(2)Flare\n");
 	printf("\t\t(3)Mom\n");
@@ -125,20 +125,55 @@ int main()
 			{
 				ch3 = shoes();
 			}
+			//------------------------------------------------------------------------
+
 			if(ch2 == 2)//takes user to types of tops
 			{
 				ch3 = tops();
 				if(ch3 == 1)
 				{
-					printf("Copy This Link in Browser\n");
-					printf("https://www.pinterest.com/rebeccacasimir2/casual/tops/\n");
-
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/casual/tops/\n");
+				}
+				if(ch3 == 2)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/professional/tops/\n");
+				}
+				if(ch3 == 3)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/datesgoing-out/tops/\n");
 				}
 			}
+			//------------------------------------------------------------------------
+
 			if(ch2 == 3)//takes user to types of dresses
 			{
 				ch3 = dresses();
+				if(ch3 == 1)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/casual/dresses/\n");
+				}
+				if(ch3 == 2)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/professional/dresses/\n");
+				}
+				if(ch3 == 3)
+				{
+					printf("\t\tCopy This Link in Browser\n");
+					printf("\t\tAll Pictures will have links to the item\n");
+					printf("\t\thttps://www.pinterest.com/rebeccacasimir2/datesgoing-out/dresses/\n");
+				}
 			}
+			//------------------------------------------------------------------------
 			if(ch2 == 4)//takes user to types of pants
 			{
 				ch3 = Pants();
